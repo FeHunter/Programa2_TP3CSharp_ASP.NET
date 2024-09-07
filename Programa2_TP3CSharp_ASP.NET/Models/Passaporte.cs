@@ -14,6 +14,6 @@ namespace Programa2_TP3CShpar_ASP.NET.Models
         public string PaisDeOrigem { get; set; }
 
         // Relacionamento um-pra-um
-        public Pessoa Pessoa { get; set; }
+        public Pessoa? Pessoa { get; set; }
     }
 }

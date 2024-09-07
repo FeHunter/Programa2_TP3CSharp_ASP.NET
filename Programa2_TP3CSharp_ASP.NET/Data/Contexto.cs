@@ -12,6 +12,11 @@ namespace Programa2_TP3CSharp_ASP.NET.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Pessoa>()
+                .HasOne(p => p.Passaporte)
+                .WithOne(p => p.Pessoa)
+                .HasForeignKey<Passaporte>(p => p.PassaportId);
+
             base.OnModelCreating(modelBuilder);
         }
     }
