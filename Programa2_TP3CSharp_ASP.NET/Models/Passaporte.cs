@@ -11,6 +11,7 @@ namespace Programa2_TP3CShpar_ASP.NET.Models
 
         [Required(ErrorMessage = "Nome do Passaporte obrigatório")]
         public string PassaportType { get; set; }
+        public string PaisDeOrigem { get; set; }
 
         // Relacionamento um-pra-um
         public Pessoa Pessoa { get; set; }

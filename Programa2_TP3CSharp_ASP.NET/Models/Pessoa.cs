@@ -10,6 +10,8 @@ namespace Programa2_TP3CShpar_ASP.NET.Models
         [Required(ErrorMessage = "Nome obrigatório")]
         [StringLength(100, ErrorMessage = "Nome muito longo")]
         public string Nome { get; set; }
+        public string Nacionalidade { get; set; }
+        public int Idade { get; set; }
 
         // Relacionamento um-pra-um
         public Passaporte Passaporte { get; set; }
