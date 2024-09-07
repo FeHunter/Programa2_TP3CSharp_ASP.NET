@@ -14,6 +14,6 @@ namespace Programa2_TP3CShpar_ASP.NET.Models
         public int Idade { get; set; }
 
         // Relacionamento um-pra-um
-        public Passaporte Passaporte { get; set; }
+        public Passaporte? Passaporte { get; set; }
     }
 }
